@@ -13,7 +13,7 @@ const ADMIN_CREDENTIALS = { username: 'admin', password: '12345' };
 const app = express();
 const bot = new TelegramBot(TELEGRAM_BOT_TOKEN, {polling: true});
 
-// Инициализация базы данных
+// Инициализация_базы данных
 const db = new sqlite3.Database('./todos.db', (err) => {
     if (err) {
         console.error('Ошибка при подключении к базе данных:', err.message);
